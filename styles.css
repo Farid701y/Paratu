@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #4a3b3b;
+  background: #fff6f9;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #b35a76;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #843550;
+}
+
+.nav-bar {
+  background: #f5d1de;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(179, 90, 118, 0.3);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #842c4a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav-links li a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.hero-section {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  text-align: center;
+  color: #5b2e3a;
+  margin-top: 60px;
+  position: relative;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(179, 90, 118, 0.5);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px #7c3a51;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  text-shadow: 0 0 4px #7c3a51;
+}
+
+.btn-primary {
+  background-color: #b35a76;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 12px #843550;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #843550;
+}
+
+.content-section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.alt-bg {
+  background-color: #fbe9f0;
+  border-radius: 12px;
+  margin: 2rem 1rem;
+}
+
+.content-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  color: #843550;
+}
+
+.pensamientos-list {
+  list-style: none;
+  font-size: 1.25rem;
+  color: #6a4150;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.pensamientos-list li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pensamientos-list li::before {
+  content: "🌷";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+}
+
+.detalle-texto {
+  font-size: 1.3rem;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #7a4c5a;
+  line-height: 1.6;
+}
+
+footer {
+  background: #f5d1de;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 600;
+  color: #6a4150;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
